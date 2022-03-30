@@ -30,8 +30,8 @@ pygame.display.set_caption('TEST PROGRAM')
 #img
 mickey=pygame.image.load('./img/mickey.jpeg')
 mickey=pygame.transform.scale(mickey, (WIDTH, HEIGHT))
-a2=pygame.image.load('./img/ruka2.png').convert_alpha()
-a1=pygame.image.load('./img/ruka1.png').convert_alpha()
+a2=pygame.image.load('./img/ruka2.png')
+a1=pygame.image.load('./img/ruka1.png')
 
 # font=pygame.font.Font('./font/bebas.ttf')
 
@@ -49,7 +49,6 @@ while not finished:
         if event.type==pygame.QUIT:
             finished=True
 
-    screen.fill(WHITE)
     screen.blit(mickey, (0, 0))
     # screen.blit(a1, (WIDTH//2-148, HEIGHT//2-120))
     # screen.blit(a2, (WIDTH//2, HEIGHT//2-131))
